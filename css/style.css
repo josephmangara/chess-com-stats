@@ -1,0 +1,20 @@
+@import url(bootstrap.css);
+
+body {
+    background-color: rgb(236, 55, 55);
+}
+
+#container {
+    width:64%;
+    height: 30px;
+}
+#searchbutton {
+    color: rgb(3, 3, 3);
+    margin-left: 2%;
+    height: 30px;
+    width: 80px;
+    font-size: large;
+}
+.bottomContainer {
+    margin-bottom: auto;
+}
