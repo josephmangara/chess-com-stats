@@ -32,9 +32,9 @@ function showUserStats(apiUrl){
     .then((stats) => {
         randomUserStats(stats);
     })
-    .catch((error) => {
-        console.error("Error fetching data: " + error);
-    });
+    // .catch((error) => {
+    //     console.error("Error fetching data: " + error);
+    // });
 }
 
 function randomUserStats(stats){
@@ -120,6 +120,7 @@ function randomUserStats(stats){
         <li>Rating: ${stats.tactics.highest.rating}</li>
         <li>Date: ${new Date(stats.tactics.highest.date * 1000)}</li>
       </ul>
+      <h5>Fide: ${stats.fide}</h5>
   
       `;
       mystats.appendChild(showStats);
